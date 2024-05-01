@@ -1,0 +1,105 @@
+*,
+::before,
+::after{
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: blanchedalmond;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	max-height: auto;
+	max-width: auto;
+}
+button{
+	background-color: red;
+	border: 2px solid white;
+}
+button:hover{
+	border: 2px solid red;
+}
+button:hover{
+	background-color: white;
+	transition: ease-in-out 0.2s;
+}
+.background{
+	background-color: #300319;
+
+}
+.parent{
+	display: grid;
+	width: 1060px;
+	height: 70vh;
+	align-items: center;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	overflow: hidden;
+	padding:10px;
+	border-radius: 10px;
+	border: 10px solid gray;
+}
+.parent div button{
+	padding: 22px 20px;
+	font-size: 1rem;
+	margin:0 3px;
+}
+.parent div .clicks{
+	padding: 22px 25px;
+	font-size: 1rem;
+}
+
+.parent div .del{
+	padding: 22px 10px;
+	font-size: 1rem;
+}
+
+.parent div .space{
+	padding: 22px 120px;
+	font-size: 1rem;
+}
+
+.childOne{
+	grid-column: 1/2;
+	grid-row:1/2;
+	display: flex;
+	flex:row nowrap;
+	justify-content: center;
+}
+.childTwo{
+	grid-column: 1/2;
+	grid-row:2/3;
+	display: flex;
+	flex:row nowrap;
+	justify-content: center;
+}
+.childThree{
+	grid-column: 1/2;
+	grid-row:3/4;
+	display: flex;
+	flex:row nowrap;
+	justify-content: center;
+}
+.childFour{
+	grid-column: 1/2;
+	grid-row:4/5;
+	display: flex;
+	flex:row nowrap;
+	justify-content: center;
+}
+.childFive{
+	grid-column: 1/2;
+	grid-row:5/6;
+	display: flex;
+	flex:row nowrap;
+	justify-content:center;
+}
+.childSix{
+	grid-column: 1/2;
+	grid-row:6/7;
+	display: flex;
+	flex:row nowrap;
+	justify-content: center;
+}
